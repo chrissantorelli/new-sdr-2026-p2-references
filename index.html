@@ -1,94 +1,270 @@
-<h2>Bibliography</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<div class="citation">
-  <strong>[1]</strong> H. Wang,
-  “Barren, Irregular, Chaotic Terrain Ring Model for Lunar Wireless Applications,”
-  Ph.D. dissertation, Worcester Polytechnic Institute, Worcester, MA, USA, 2025.
-  <br>
-  <a href="https://digital.wpi.edu/show/zw12z970h" target="_blank">
-    https://digital.wpi.edu/show/zw12z970h
-  </a>
-</div>
+  <title>NEW SDR 2026 — Poster P2 References</title>
 
-<div class="citation">
-  <strong>[2]</strong> OpenAirInterface Software Alliance,
-  <em>OpenAirInterface 5G Repository</em>.
-  <br>
-  <a href="https://github.com/OPENAIRINTERFACE/openairinterface5g" target="_blank">
-    https://github.com/OPENAIRINTERFACE/openairinterface5g
-  </a>
-</div>
+  <style>
+    :root {
+      --bg: #f7f8fa;
+      --card: #ffffff;
+      --text: #202124;
+      --muted: #555f6d;
+      --border: #d7dce2;
+      --accent: #1f4e79;
+      --accent-light: #e8f1fa;
+    }
 
-<div class="citation">
-  <strong>[3]</strong> M. Elkadi, D. Kim, E. Ahmed, M. Sadeghi, A. Le,
-  P. Russell, and B. Ryu,
-  “Open Source-based Over-The-Air 5G New Radio Sidelink Testbed,”
-  arXiv:2306.09286, 2023.
-  <br>
-  <a href="https://arxiv.org/abs/2306.09286" target="_blank">
-    https://arxiv.org/abs/2306.09286
-  </a>
-</div>
+    * {
+      box-sizing: border-box;
+    }
 
-<div class="citation">
-  <strong>[4]</strong> 3GPP,
-  “NR; Physical layer procedures for data,”
-  <em>3GPP TS 38.214</em>.
-  <br>
-  <a href="https://www.3gpp.org/ftp/Specs/archive/38_series/38.214/" target="_blank">
-    https://www.3gpp.org/ftp/Specs/archive/38_series/38.214/
-  </a>
-</div>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      max-width: 1050px;
+      margin: 40px auto;
+      padding: 0 24px 50px;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--bg);
+    }
 
-<div class="citation">
-  <strong>[5]</strong> M. Mezzavilla, M. Polese, A. Zanella, and M. Zorzi,
-  “End-to-End Simulation of 5G mmWave Networks,”
-  <em>IEEE Communications Surveys & Tutorials</em>,
-  vol. 20, no. 3, pp. 2237–2263, 2018.
-  <br>
-  <a href="https://doi.org/10.1109/COMST.2018.2828880" target="_blank">
-    https://doi.org/10.1109/COMST.2018.2828880
-  </a>
-</div>
+    header {
+      margin-bottom: 32px;
+      padding-bottom: 18px;
+      border-bottom: 3px solid var(--accent);
+    }
 
-<div class="citation">
-  <strong>[6]</strong> E. Dahlman, S. Parkvall, and J. Sköld,
-  <em>5G NR: The Next Generation Wireless Access Technology</em>.
-  London, U.K.: Academic Press, 2018.
-  <br>
-  <a href="https://www.sciencedirect.com/book/9780128143230/5g-nr" target="_blank">
-    https://www.sciencedirect.com/book/9780128143230/5g-nr
-  </a>
-</div>
+    h1 {
+      margin: 0 0 12px;
+      font-size: 2rem;
+      line-height: 1.2;
+      color: var(--accent);
+    }
 
-<div class="citation">
-  <strong>[7]</strong> T. S. Rappaport et al.,
-  “Wideband Millimeter-Wave Propagation Measurements and Channel Models for Future Wireless Communication System Design,”
-  <em>IEEE Transactions on Antennas and Propagation</em>,
-  vol. 63, no. 7, pp. 3029–3056, Jul. 2015.
-  <br>
-  <a href="https://doi.org/10.1109/TAP.2015.2434384" target="_blank">
-    https://doi.org/10.1109/TAP.2015.2434384
-  </a>
-</div>
+    h2 {
+      margin-top: 36px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--border);
+      color: var(--accent);
+    }
 
-<div class="citation">
-  <strong>[8]</strong> 3GPP,
-  “NR; Base Station (BS) radio transmission and reception,”
-  <em>3GPP TS 38.104</em>.
-  <br>
-  <a href="https://www.3gpp.org/ftp/Specs/archive/38_series/38.104/" target="_blank">
-    https://www.3gpp.org/ftp/Specs/archive/38_series/38.104/
-  </a>
-</div>
+    .metadata {
+      background: var(--accent-light);
+      border-left: 5px solid var(--accent);
+      padding: 16px 18px;
+      margin-top: 18px;
+      border-radius: 6px;
+    }
 
-<div class="citation">
-  <strong>[9]</strong> M. K. Barker, E. Mazarico, G. A. Neumann,
-  M. T. Zuber, J. Haruyama, and D. E. Smith,
-  “A new lunar digital elevation model from the Lunar Orbiter Laser Altimeter and SELENE Terrain Camera,”
-  <em>Icarus</em>, vol. 273, pp. 346–355, 2016.
-  <br>
-  <a href="http://dx.doi.org/10.1016/j.icarus.2015.07.039" target="_blank">
-    http://dx.doi.org/10.1016/j.icarus.2015.07.039
-  </a>
-</div>
+    .metadata p {
+      margin: 6px 0;
+    }
+
+    .poster-title {
+      font-weight: 700;
+    }
+
+    .citation {
+      margin-bottom: 18px;
+      padding: 15px 18px;
+      background: var(--card);
+      border-left: 4px solid var(--accent);
+      border-radius: 6px;
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+    }
+
+    .citation strong {
+      color: #111;
+    }
+
+    .citation p {
+      margin: 0;
+    }
+
+    a {
+      color: #0056b3;
+      word-break: break-word;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .note {
+      margin-top: 34px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    @media print {
+      body {
+        background: white;
+        margin: 20px auto;
+      }
+
+      .citation {
+        box-shadow: none;
+        border: 1px solid var(--border);
+        border-left: 4px solid var(--accent);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>NEW SDR 2026 — Poster P2 References</h1>
+
+    <div class="metadata">
+      <p><strong>Poster:</strong> P2</p>
+      <p><strong>Conference:</strong> NEW SDR 2026</p>
+      <p>
+        <strong>Title:</strong><br>
+        <span class="poster-title">
+          Link-Level Evaluation of 5G NR PC5 Sidelink Mode 2 under BICTR Lunar South Pole Propagation:
+          First-CRC BLER, HARQ, and Throughput in OpenAirInterface RFSim
+        </span>
+      </p>
+    </div>
+  </header>
+
+  <main>
+    <h2>Bibliography</h2>
+
+    <div class="citation">
+      <p>
+        <strong>[1]</strong> H. Wang,
+        “Barren, Irregular, Chaotic Terrain Ring Model for Lunar Wireless Applications,”
+        Ph.D. dissertation, Worcester Polytechnic Institute, Worcester, MA, USA, 2025.
+        <br>
+        <a href="https://digital.wpi.edu/show/zw12z970h" target="_blank" rel="noopener noreferrer">
+          https://digital.wpi.edu/show/zw12z970h
+        </a>
+      </p>
+    </div>
+
+    <div class="citation">
+      <p>
+        <strong>[2]</strong> OpenAirInterface Software Alliance,
+        <em>OpenAirInterface 5G Repository</em>.
+        <br>
+        <a href="https://github.com/OPENAIRINTERFACE/openairinterface5g" target="_blank" rel="noopener noreferrer">
+          https://github.com/OPENAIRINTERFACE/openairinterface5g
+        </a>
+      </p>
+    </div>
+
+    <div class="citation">
+      <p>
+        <strong>[3]</strong> M. Elkadi, D. Kim, E. Ahmed, M. Sadeghi, A. Le, P. Russell, and B. Ryu,
+        “Open Source-based Over-The-Air 5G New Radio Sidelink Testbed,”
+        arXiv:2306.09286, 2023.
+        <br>
+        <a href="https://arxiv.org/abs/2306.09286" target="_blank" rel="noopener noreferrer">
+          https://arxiv.org/abs/2306.09286
+        </a>
+      </p>
+    </div>
+
+    <div class="citation">
+      <p>
+        <strong>[4]</strong> 3GPP,
+        “NR; Physical layer procedures for data,”
+        <em>3GPP TS 38.214</em>.
+        <br>
+        <a href="https://www.3gpp.org/ftp/Specs/archive/38_series/38.214/" target="_blank" rel="noopener noreferrer">
+          https://www.3gpp.org/ftp/Specs/archive/38_series/38.214/
+        </a>
+      </p>
+    </div>
+
+    <div class="citation">
+      <p>
+        <strong>[5]</strong> M. Mezzavilla, M. Polese, A. Zanella, and M. Zorzi,
+        “End-to-End Simulation of 5G mmWave Networks,”
+        <em>IEEE Communications Surveys &amp; Tutorials</em>,
+        vol. 20, no. 3, pp. 2237–2263, 2018.
+        <br>
+        <a href="https://doi.org/10.1109/COMST.2018.2828880" target="_blank" rel="noopener noreferrer">
+          https://doi.org/10.1109/COMST.2018.2828880
+        </a>
+      </p>
+    </div>
+
+    <div class="citation">
+      <p>
+        <strong>[6]</strong> E. Dahlman, S. Parkvall, and J. Sköld,
+        <em>5G NR: The Next Generation Wireless Access Technology</em>.
+        London, U.K.: Academic Press, 2018.
+        <br>
+        <a href="https://www.sciencedirect.com/book/9780128143230/5g-nr" target="_blank" rel="noopener noreferrer">
+          https://www.sciencedirect.com/book/9780128143230/5g-nr
+        </a>
+      </p>
+    </div>
+
+    <div class="citation">
+      <p>
+        <strong>[7]</strong> T. S. Rappaport et al.,
+        “Wideband Millimeter-Wave Propagation Measurements and Channel Models for Future Wireless Communication System Design,”
+        <em>IEEE Transactions on Antennas and Propagation</em>,
+        vol. 63, no. 7, pp. 3029–3056, Jul. 2015.
+        <br>
+        <a href="https://doi.org/10.1109/TAP.2015.2434384" target="_blank" rel="noopener noreferrer">
+          https://doi.org/10.1109/TAP.2015.2434384
+        </a>
+      </p>
+    </div>
+
+    <div class="citation">
+      <p>
+        <strong>[8]</strong> 3GPP,
+        “NR; Base Station (BS) radio transmission and reception,”
+        <em>3GPP TS 38.104</em>.
+        <br>
+        <a href="https://www.3gpp.org/ftp/Specs/archive/38_series/38.104/" target="_blank" rel="noopener noreferrer">
+          https://www.3gpp.org/ftp/Specs/archive/38_series/38.104/
+        </a>
+      </p>
+    </div>
+
+    <div class="citation">
+      <p>
+        <strong>[9]</strong> M. K. Barker, E. Mazarico, G. A. Neumann,
+        M. T. Zuber, J. Haruyama, and D. E. Smith,
+        “A new lunar digital elevation model from the Lunar Orbiter Laser Altimeter and SELENE Terrain Camera,”
+        <em>Icarus</em>, vol. 273, pp. 346–355, 2016.
+        <br>
+        <a href="http://dx.doi.org/10.1016/j.icarus.2015.07.039" target="_blank" rel="noopener noreferrer">
+          http://dx.doi.org/10.1016/j.icarus.2015.07.039
+        </a>
+      </p>
+    </div>
+
+    <h2>Supplementary Notes</h2>
+
+    <div class="citation">
+      <p>
+        <strong>Implementation environment:</strong><br>
+        OpenAirInterface RFSim with 5G NR PC5 sidelink Mode 2 configuration.
+      </p>
+    </div>
+
+    <div class="citation">
+      <p>
+        <strong>Primary evaluated metrics:</strong><br>
+        First-CRC BLER, HARQ behavior, and throughput under BICTR lunar South Pole propagation assumptions.
+      </p>
+    </div>
+
+    <p class="note">
+      Last updated: June 2026.
+    </p>
+  </main>
+</body>
+</html>
